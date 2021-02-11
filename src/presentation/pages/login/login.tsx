@@ -24,7 +24,7 @@ const Login: React.FC<Props> = ({ validation }: Props) => {
       emailError: validation.validate('email', state.email),
       passwordError: validation.validate('password', state.password)
     })
-  }, [state.password, state.password])
+  }, [state.email, state.password])
 
   return (
     <div className={Styles.login}>
