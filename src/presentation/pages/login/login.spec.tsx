@@ -50,7 +50,10 @@ const testElementText = (sut: RenderResult, fieldName: string, text: string): vo
   expect(element.textContent).toBe(text)
 }
 
-const simulateValidSubmit = async (sut: RenderResult, email = faker.internet.email(), password = faker.internet.password()): Promise<void> => {
+const simulateValidSubmit = async (
+  sut: RenderResult, email = faker.internet.email(),
+  password = faker.internet.password()
+): Promise<void> => {
   Helper.populateField(sut, 'email', email)
   Helper.populateField(sut, 'password', password)
   const form = sut.getByTestId('form')
