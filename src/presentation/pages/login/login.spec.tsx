@@ -70,14 +70,14 @@ describe('Login Component', () => {
     Helper.testStatusForField(sut, 'password', validationError)
   })
 
-  test('Should email error if Validation fails', () => {
+  test('Should show email error if Validation fails', () => {
     const validationError = faker.random.words()
     const { sut } = makeSut({ validationError })
     Helper.populateField(sut, 'email')
     Helper.testStatusForField(sut, 'email', validationError)
   })
 
-  test('Should password error if Validation fails', () => {
+  test('Should show password error if Validation fails', () => {
     const validationError = faker.random.words()
     const { sut } = makeSut({ validationError })
     Helper.populateField(sut, 'password')
