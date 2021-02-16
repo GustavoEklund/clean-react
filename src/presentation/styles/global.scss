@@ -15,14 +15,8 @@ body {
 input[type="password"],
 input[type="email"],
 input[type="text"] {
-  border: 1px solid $primaryLight;
-  line-height: 40px;
-  border-radius: 4px;
-  padding: 0 40px 0 8px;
-
-  &:focus {
-    outline-color: $primaryLight;
-  }
+  border: none;
+  outline: none;
 }
 
 button {
@@ -30,7 +24,7 @@ button {
   color: $white;
   border-radius: 8px;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 50px;
   border: none;
 
   &:hover {
