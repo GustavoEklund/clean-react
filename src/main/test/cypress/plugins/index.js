@@ -1,5 +1,5 @@
-const cypressTypescriptPreprocessor = require('./cy-ts-preprocessor')
+const cypressTypeScriptPreprocessor = require('./cy-ts-preprocessor')
 
 module.exports = on => {
-  on('file:preprocessor', cypressTypescriptPreprocessor)
+  on('file:preprocessor', cypressTypeScriptPreprocessor)
 }
