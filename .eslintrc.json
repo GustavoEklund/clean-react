@@ -12,14 +12,12 @@
   "env": {
     "cypress/globals": true
   },
-  "plugins": [
-    "react",
-    "cypress"
-  ],
+  "plugins": ["react", "cypress"],
   "parserOptions": {
     "project": "./tsconfig-eslint.json"
   },
   "rules": {
+    "react/prop-types": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "@typescript-eslint/consistent-type-definitions": "off",
@@ -27,7 +25,11 @@
     "@typescript-eslint/comma-spacing": "off",
     "@typescript-eslint/return-await": "off",
     "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-namespace": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "off"
+    "no-redeclare": "off",
+    "import/export": "off"
   }
 }
